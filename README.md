@@ -25,11 +25,11 @@ Built for mobile first and deployed with GitHub Pages + Firebase.
     Open `firebase.js` and paste your Firebase project keys:
     ```javascript
     const firebaseConfig = {
-      apiKey: "YOUR_API_KEY",
-      authDomain: "YOUR_AUTH_DOMAIN",
-      databaseURL: "YOUR_DATABASE_URL",
-      projectId: "YOUR_PROJECT_ID",
-      storageBucket: "YOUR_STORAGE_BUCKET",
-      messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-      appId: "YOUR_APP_ID"
-    };
+  apiKey: "AIzaSyCwmks7xoBtDyOoZhe2pOCFCyia2HLd9DI",
+  authDomain: "nexa-app-7163c.firebaseapp.com",
+  projectId: "nexa-app-7163c",
+  storageBucket: "nexa-app-7163c.firebasestorage.app",
+  messagingSenderId: "781173458855",
+  appId: "1:781173458855:web:71bb5e6532898d20711882",
+  measurementId: "G-KR4YENF8XR"
+};
