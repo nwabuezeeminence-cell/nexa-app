@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXA - Chat</title>
+  <link rel="stylesheet" href="chat-dark.css">
+</head>
+<body class="chat-body">
+  <div class="chat-container">
+    <div class="chat-header">
+      <img src="NEXA.png" alt="NEXA" width="40">
+      <h3>NEXA Chat</h3>
+      <button id="logout-btn">Logout</button>
+    </div>
+    <div id="chat-messages"></div>
+    <div class="chat-input">
+      <input type="text" id="message-input" placeholder="Type a message...">
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+  <script type="module" src="firebase.js"></script>
+</body>
+</html>
