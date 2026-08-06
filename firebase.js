@@ -5,6 +5,7 @@ import { getDatabase, ref, push, onChildAdded } from "https://www.gstatic.com/fi
 const firebaseConfig = {
   apiKey: "AIzaSyCwmks7xoBtDyOoZhe2pOCFCyia2HLd9DI",
   authDomain: "nexa-app-7163c.firebaseapp.com",
+  databaseURL: "https://nexa-app-7163c-default-rtdb.firebaseio.com", // <- THIS LINE IS MOST IMPORTANT
   projectId: "nexa-app-7163c",
   storageBucket: "nexa-app-7163c.firebasestorage.app",
   messagingSenderId: "781173458855",
