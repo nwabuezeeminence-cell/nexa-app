@@ -24,12 +24,13 @@ Built for mobile first and deployed with GitHub Pages + Firebase.
 2.  **Add Firebase Config**
     Open `firebase.js` and paste your Firebase project keys:
     ```javascript
-    const firebaseConfig = {
+  const firebaseConfig = {
   apiKey: "AIzaSyCwmks7xoBtDyOoZhe2pOCFCyia2HLd9DI",
   authDomain: "nexa-app-7163c.firebaseapp.com",
+  databaseURL: "https://nexa-app-7163c-default-rtdb.firebaseio.com", // <- THIS LINE IS MOST IMPORTANT
   projectId: "nexa-app-7163c",
   storageBucket: "nexa-app-7163c.firebasestorage.app",
   messagingSenderId: "781173458855",
   appId: "1:781173458855:web:71bb5e6532898d20711882",
   measurementId: "G-KR4YENF8XR"
-};
+};  
