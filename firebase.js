@@ -3,13 +3,13 @@ import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, si
 import { getDatabase, ref, push, onChildAdded } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 
 const firebaseConfig = {
-  apiKey: "PASTE_YOUR_API_KEY_HERE",
-  authDomain: "PASTE_YOUR_AUTH_DOMAIN_HERE",
-  databaseURL: "PASTE_YOUR_DATABASE_URL_HERE",
-  projectId: "PASTE_YOUR_PROJECT_ID_HERE",
-  storageBucket: "PASTE_YOUR_STORAGE_BUCKET_HERE",
-  messagingSenderId: "PASTE_YOUR_MESSAGING_SENDER_ID_HERE",
-  appId: "PASTE_YOUR_APP_ID_HERE"
+  apiKey: "AIzaSyCwmks7xoBtDyOoZhe2pOCFCyia2HLd9DI",
+  authDomain: "nexa-app-7163c.firebaseapp.com",
+  projectId: "nexa-app-7163c",
+  storageBucket: "nexa-app-7163c.firebasestorage.app",
+  messagingSenderId: "781173458855",
+  appId: "1:781173458855:web:71bb5e6532898d20711882",
+  measurementId: "G-KR4YENF8XR"
 };
 
 const app = initializeApp(firebaseConfig);
