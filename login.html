@@ -3,19 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NEXA - Login</title>
-  <link rel="stylesheet" href="chat-dark.css">
+  <title>Login - NEXA</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="auth-body">
-  <div class="auth-container">
-    <img src="nexa_dark_bg_preview.png" alt="NEXA Logo" class="auth-logo">
-    <h2>Login to NEXA</h2>
-    <input type="email" id="login-email" placeholder="Email">
-    <input type="password" id="login-password" placeholder="Password">
-    <button id="login-btn" class="btn">Login</button>
-    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
-    <p id="login-error" class="error"></p>
+<body>
+  <div class="glass-card">
+    <h2>Welcome Back</h2>
+    <p class="subtitle">Login to continue to NEXA</p>
+
+    <input type="text" id="loginInput" class="glass-input" placeholder="Email or Username or Phone" required>
+    <input type="password" id="loginPassword" class="glass-input" placeholder="Password" required>
+
+    <div style="text-align: right; margin-bottom: 15px;">
+      <a href="forgot-password.html" class="footer-link">Forgot Password?</a>
+    </div>
+
+    <button class="btn" id="loginBtn">Login</button>
+
+    <p class="footer-link">Don't have an account? <a href="create-account.html">Sign Up</a></p>
   </div>
+
   <script type="module" src="firebase.js"></script>
+  <script type="module" src="login.js"></script>
 </body>
 </html>
