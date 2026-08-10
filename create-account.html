@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account - NEXA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="glass-card">
+    <h2 id="stepTitle">Create Account</h2>
+    <p class="subtitle" id="stepSubtitle">Step 1 of 9</p>
+
+    <!-- STEP 1: NAME -->
+    <div class="step" id="step1">
+      <input type="text" id="firstName" class="glass-input" placeholder="First Name" required>
+      <input type="text" id="lastName" class="glass-input" placeholder="Last Name" required>
+    </div>
+
+    <!-- STEP 2: USERNAME -->
+    <div class="step" id="step2" style="display: none;">
+      <input type="text" id="username" class="glass-input" placeholder="Choose Username" required>
+      <p class="subtitle">This is how people will find you</p>
+    </div>
+
+    <!-- STEP 3: PHONE -->
+    <div class="step" id="step3" style="display: none;">
+      <input type="tel" id="phone" class="glass-input" placeholder="Phone Number" required>
+    </div>
+
+    <!-- STEP 4: EMAIL -->
+    <div class="step" id="step4" style="display: none;">
+      <input type="email" id="email" class="glass-input" placeholder="Email Address" required>
+    </div>
+
+    <!-- STEP 5: DOB -->
+    <div class="step" id="step5" style="display: none;">
+      <p class="subtitle">When were you born?</p>
+      <input type="date" id="dob" class="glass-input" required>
+    </div>
+
+    <!-- STEP 6: GENDER -->
+    <div class="step" id="step6" style="display: none;">
+      <p class="subtitle">Select your gender</p>
+      <div class="gender-group">
+        <button type="button" class="gender-btn" data-gender="Male">Male</button>
+        <button type="button" class="gender-btn" data-gender="Female">Female</button>
+        <button type="button" class="gender-btn" data-gender="Other">Other</button>
+      </div>
+    </div>
+
+    <!-- STEP 7: PFP -->
+    <div class="step" id="step7" style="display: none;">
+      <div class="avatar-wrapper">
+        <img id="pfpPreview" src="https://i.imgur.com/0y8Ftya.png" alt="Profile">
+        <label for="pfpUpload" class="camera-btn">📷</label>
+        <input type="file" id="pfpUpload" accept="image/*" style="display: none;">
+      </div>
+      <p class="subtitle">Upload profile photo</p>
+    </div>
+
+    <!-- STEP 8: VERIFICATION -->
+    <div class="step" id="step8" style="display: none;">
+      <p class="subtitle">We sent a 6-digit code to your email/phone</p>
+      <input type="text" id="verificationCode" class="glass-input" placeholder="Enter 6-digit Code" maxlength="6" required>
+      <button class="btn-outline" id="resendBtn" type="button">Resend Code</button>
+    </div>
+
+    <!-- STEP 9: PASSWORD -->
+    <div class="step" id="step9" style="display: none;">
+      <input type="password" id="password" class="glass-input" placeholder="Create Password" required>
+      <input type="password" id="confirmPassword" class="glass-input" placeholder="Confirm Password" required>
+    </div>
+
+    <div class="intro-buttons">
+      <button class="btn-outline back-btn" id="backBtn" style="display: none;">Back</button>
+      <button class="btn" id="nextBtn">Next</button>
+    </div>
+
+    <p class="footer-link">Already have an account? <a href="login.html">Log In</a></p>
+  </div>
+
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="create-account.js"></script>
+</body>
+  </html>
